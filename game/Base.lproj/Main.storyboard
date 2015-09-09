@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7lI-12-TIZ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-819" y="391"/>
+        </scene>
+        <!--fortuneCookies-->
+        <scene sceneID="Lpp-Gx-7Bs">
+            <objects>
+                <viewController id="ccC-1r-5B3" customClass="fortuneCookiesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eIZ-nk-Ov6"/>
+                        <viewControllerLayoutGuide type="bottom" id="2MP-Af-Nje"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LFd-9f-Xbv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xm8-cx-s0n">
+                                <rect key="frame" x="16" y="28" width="568" height="354"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="To know your Fortune,break cookie below" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4Cl-vQ-Ijy">
+                                <rect key="frame" x="133" y="78" width="321" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.3336095328" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Welcome to Fortune Cookies" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="xQc-M9-4LJ">
+                                <rect key="frame" x="140" y="49" width="320" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.24711963379999999" green="0.056964069200000002" blue="0.064143482690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auV-xp-o90">
+                                <rect key="frame" x="108" y="417" width="320" height="50"/>
+                                <state key="normal" backgroundImage="buttonText">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="ccC-1r-5B3" eventType="touchUpInside" id="CtW-pw-bIP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2MP-Af-Nje" firstAttribute="top" secondItem="auV-xp-o90" secondAttribute="bottom" constant="10" id="FHW-ps-IfW"/>
+                            <constraint firstItem="auV-xp-o90" firstAttribute="leading" secondItem="LFd-9f-Xbv" secondAttribute="leadingMargin" constant="2" id="T2n-FT-bBs"/>
+                            <constraint firstAttribute="centerX" secondItem="xm8-cx-s0n" secondAttribute="centerX" id="UXP-9Y-fmK"/>
+                            <constraint firstAttribute="centerX" secondItem="xQc-M9-4LJ" secondAttribute="centerX" id="V4h-wT-uRk"/>
+                            <constraint firstAttribute="centerX" secondItem="4Cl-vQ-Ijy" secondAttribute="centerX" id="YNK-wx-GQh"/>
+                            <constraint firstAttribute="centerX" secondItem="auV-xp-o90" secondAttribute="centerX" id="ZNA-Do-DN6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="auV-xp-o90" secondAttribute="trailing" constant="-154" id="iJ9-yM-Wj5"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="fortuneCookies" image="tabCookie" id="8tc-fs-Slp"/>
+                    <connections>
+                        <outlet property="button1" destination="auV-xp-o90" id="R5C-ZE-anA"/>
+                        <outlet property="headingLabel" destination="xQc-M9-4LJ" id="VMW-Zs-uET"/>
+                        <outlet property="showImage" destination="xm8-cx-s0n" id="Ckt-AC-y1t"/>
+                        <outlet property="subHeadingLabel" destination="4Cl-vQ-Ijy" id="3d8-8c-oIp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e7S-1W-gwJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="782" y="797"/>
+        </scene>
+        <!--jackpot-->
+        <scene sceneID="uud-3M-5aV">
+            <objects>
+                <viewController id="tNQ-yt-Cph" customClass="jackpotViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9BR-eL-9hJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="BhU-Q7-KJF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="czy-Tw-bru">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jackpotBackground" translatesAutoresizingMaskIntoConstraints="NO" id="oL5-qK-zrF">
+                                <rect key="frame" x="-39" y="1" width="821" height="663"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNW-or-DMZ">
+                                <rect key="frame" x="277" y="355" width="51" height="30"/>
+                                <state key="normal" backgroundImage="spinButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="spin:" destination="tNQ-yt-Cph" eventType="touchUpInside" id="Iqk-VV-TWp"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5gq-wp-uxb">
+                                <rect key="frame" x="0.0" y="142" width="600" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="tNQ-yt-Cph" id="z06-aU-yXG"/>
+                                    <outlet property="delegate" destination="tNQ-yt-Cph" id="N8Y-Y4-SDy"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome to Jackpot" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yj0-T7-1hb">
+                                <rect key="frame" x="237" y="34" width="209" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="0.24711963379999999" green="0.056964069200000002" blue="0.064143482690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="If you get any three set to same, You win!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Flb-xa-jyK">
+                                <rect key="frame" x="158" y="70" width="316" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.3336095328" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="JACKPOT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqn-yK-zEj">
+                                <rect key="frame" x="243" y="289" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" red="0.81699810606060608" green="0.12991357722713065" blue="0.1014417072348746" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="5gq-wp-uxb" secondAttribute="centerX" id="1qh-hk-Hdp"/>
+                            <constraint firstItem="Flb-xa-jyK" firstAttribute="top" secondItem="Yj0-T7-1hb" secondAttribute="bottom" constant="9" id="2ln-Qt-ULL"/>
+                            <constraint firstAttribute="centerX" secondItem="Yj0-T7-1hb" secondAttribute="centerX" id="KQ6-Py-IPI"/>
+                            <constraint firstItem="Yj0-T7-1hb" firstAttribute="top" secondItem="9BR-eL-9hJ" secondAttribute="bottom" constant="14" id="LBL-Q3-CZ9"/>
+                            <constraint firstAttribute="centerY" secondItem="5gq-wp-uxb" secondAttribute="centerY" id="V89-oy-BeR"/>
+                            <constraint firstItem="PNW-or-DMZ" firstAttribute="top" secondItem="qqn-yK-zEj" secondAttribute="bottom" constant="20" id="Xen-or-gle"/>
+                            <constraint firstAttribute="centerX" secondItem="PNW-or-DMZ" secondAttribute="centerX" id="f9N-Hf-xTi"/>
+                            <constraint firstAttribute="centerX" secondItem="qqn-yK-zEj" secondAttribute="centerX" id="kJC-nj-AI8"/>
+                            <constraint firstAttribute="centerX" secondItem="5gq-wp-uxb" secondAttribute="centerX" id="sMv-36-Ohk"/>
+                            <constraint firstAttribute="centerX" secondItem="Flb-xa-jyK" secondAttribute="centerX" id="wei-a8-waw"/>
+                            <constraint firstItem="BhU-Q7-KJF" firstAttribute="top" secondItem="PNW-or-DMZ" secondAttribute="bottom" constant="15" id="yGz-ZH-ayE"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="jackpot" image="tabJackpot" id="tN7-7M-q5j"/>
+                    <connections>
+                        <outlet property="picker" destination="5gq-wp-uxb" id="0Zs-HD-fO4"/>
+                        <outlet property="winLabel" destination="qqn-yK-zEj" id="zR1-sD-nOW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DvY-ze-vMd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="754" y="45"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="HD0-mX-Vyf">
+            <objects>
+                <tabBarController id="7lI-12-TIZ" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Kss-b8-Uis">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="tNQ-yt-Cph" kind="relationship" relationship="viewControllers" id="VhD-oe-k91"/>
+                        <segue destination="ccC-1r-5B3" kind="relationship" relationship="viewControllers" id="Ehv-bi-jZ2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w0V-Zh-uyd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-43" y="403"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="buttonText" width="180" height="25"/>
+        <image name="jackpotBackground" width="259" height="194"/>
+        <image name="spinButton" width="97" height="71"/>
+        <image name="tabCookie" width="32" height="32"/>
+        <image name="tabJackpot" width="32" height="32"/>
+    </resources>
+</document>
